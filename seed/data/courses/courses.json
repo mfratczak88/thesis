@@ -1,0 +1,222 @@
+[
+  {
+    "_id": "607603762865542c6f309a69",
+    "name": "Administracja",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2b"
+  },
+  {
+    "_id": "607603762865542c6f309a6a",
+    "name": "Aerospace Engineering/Lotnictwo i kosmonautyka",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec37"
+  },
+  {
+    "_id": "607603762865542c6f309a6b",
+    "name": "Architecture/Architektura",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2c"
+  },
+  {
+    "_id": "607603762865542c6f309a6c",
+    "name": "Architektura",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2c"
+  },
+  {
+    "_id": "607603762865542c6f309a6d",
+    "name": "Automatyka i robotyka",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2e"
+  },
+  {
+    "_id": "607603762865542c6f309a6e",
+    "name": "Automatyka i robotyka stosowana",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2f"
+  },
+  {
+    "_id": "607603762865542c6f309a6f",
+    "name": "Automatyzacja i robotyzacja procesów produkcyjnych",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec35"
+  },
+  {
+    "_id": "607603762865542c6f309a70",
+    "name": "Automatyka, robotyka i informatyka przemysłowa",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec38"
+  },
+  {
+    "_id": "607603762865542c6f309a71",
+    "name": "Biogospodarka",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec32"
+  },
+  {
+    "_id": "607603762865542c6f309a72",
+    "name": "Biotechnologia",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2d"
+  },
+  {
+    "_id": "607603762865542c6f309a73",
+    "name": "Elektromobilność",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2f"
+  },
+  {
+    "_id": "607603762865542c6f309a74",
+    "name": "Elektronika",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2e"
+  },
+  {
+    "_id": "607603762865542c6f309a75",
+    "name": "Elektrotechnika",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2f"
+  },
+  {
+    "_id": "607603762865542c6f309a76",
+    "name": "Energetyka",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec37"
+  },
+  {
+    "_id": "607603762865542c6f309a77",
+    "name": "Fizyka techniczna",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec30"
+  },
+  {
+    "_id": "607603762865542c6f309a78",
+    "name": "Fotonika",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec30"
+  },
+  {
+    "_id": "607603762865542c6f309a79",
+    "name": "Geodezja i kartografia",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec31"
+  },
+  {
+    "_id": "607603762865542c6f309a7a",
+    "name": "Gospodarka przestrzenna",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec31"
+  },
+  {
+    "_id": "607603762865542c6f309a7b",
+    "name": "Informatyka",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec2e"
+  },
+  {
+    "_id": "607603762865542c6f309a7c",
+    "name": "Informatyka i systemy informacyjne",
+    "level": {
+      "levelName": "inżynierskie"
+    },
+    "mode": {
+      "modeName": "stacjonarne"
+    },
+    "facultyId": "6075f30d5cd6e9297f7cec36"
+  }
+]

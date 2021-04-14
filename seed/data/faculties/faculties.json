@@ -1,0 +1,192 @@
+[
+  {
+    "_id": "6075f30d5cd6e9297f7cec2b",
+    "name": "Administracji i Nauk Społecznych",
+    "address": {
+      "buildingNumber": "1",
+      "street": "Plac Politechniki",
+      "city": "Warszawa",
+      "postalCode": "00-661"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec2c",
+    "name": "Architektury",
+    "address": {
+      "buildingNumber": "55",
+      "street": "Koszykowa",
+      "city": "Warszawa",
+      "postalCode": "00-659"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec2d",
+    "name": "Chemiczny",
+    "address": {
+      "buildingNumber": "3",
+      "street": "Nowakowskiego",
+      "city": "Warszawa",
+      "postalCode": "00-664"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec2e",
+    "name": "Elektroniki i Technik Informacyjnych",
+    "address": {
+      "buildingNumber": "15/19",
+      "street": "Nowowiejska",
+      "city": "Warszawa",
+      "postalCode": "00-665"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec2f",
+    "name": "Elektryczny",
+    "address": {
+      "buildingNumber": "1",
+      "street": "Plac Politechniki",
+      "city": "Warszawa",
+      "postalCode": "00-661"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec30",
+    "name": "Fizyki",
+    "address": {
+      "buildingNumber": "75",
+      "street": "Koszykowa",
+      "city": "Warszawa",
+      "postalCode": "00-662"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec31",
+    "name": "Geodezji i Kartografii",
+    "address": {
+      "buildingNumber": "1",
+      "street": "Plac Politechniki",
+      "city": "Warszawa",
+      "postalCode": "00-661"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec32",
+    "name": "Instalacji Budowlanych, Hydrotechniki i Inżynierii Środowiska",
+    "address": {
+      "buildingNumber": "20",
+      "street": "Nowowiejska",
+      "city": "Warszawa",
+      "postalCode": "00-653"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec33",
+    "name": "Inżynierii Chemicznej i Procesowej",
+    "address": {
+      "buildingNumber": "1",
+      "street": "Waryńskiego",
+      "city": "Warszawa",
+      "postalCode": "00-645"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec34",
+    "name": "Inżynierii Materiałowej",
+    "address": {
+      "buildingNumber": "1",
+      "street": "Waryńskiego",
+      "city": "Warszawa",
+      "postalCode": "00-645"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec35",
+    "name": "Inżynierii Produkcji",
+    "address": {
+      "buildingNumber": "85",
+      "street": "Narbutta",
+      "city": "Warszawa",
+      "postalCode": "02-524"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec36",
+    "name": "Matematyki i Nauk Informacyjnych",
+    "address": {
+      "buildingNumber": "75",
+      "street": "Koszykowa",
+      "city": "Warszawa",
+      "postalCode": "00-662"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec37",
+    "name": "Mechaniczny Energetyki i Lotnictwa",
+    "address": {
+      "buildingNumber": "24",
+      "street": "Nowowiejska",
+      "city": "Warszawa",
+      "postalCode": "00-665"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec38",
+    "name": "Mechatroniki",
+    "address": {
+      "buildingNumber": "8",
+      "street": "św. Andrzeja Boboli",
+      "city": "Warszawa",
+      "postalCode": "02-525"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec39",
+    "name": "Samochodów i Maszyn Roboczych",
+    "address": {
+      "buildingNumber": "84",
+      "street": "Narbutta",
+      "city": "Warszawa",
+      "postalCode": "02-524"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec3a",
+    "name": "Transportu",
+    "address": {
+      "buildingNumber": "75",
+      "street": "Koszykowa",
+      "city": "Warszawa",
+      "postalCode": "00-662"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec3b",
+    "name": "Zarządzania",
+    "address": {
+      "buildingNumber": "85",
+      "street": "Narbutta",
+      "city": "Warszawa",
+      "postalCode": "02-524"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec3c",
+    "name": "Budownictwa, Mechaniki i Petrochemii",
+    "address": {
+      "buildingNumber": "17",
+      "street": "Łukasiewicza",
+      "city": "Płock",
+      "postalCode": "09-400"
+    }
+  },
+  {
+    "_id": "6075f30d5cd6e9297f7cec3d",
+    "name": "Nauk Ekonomicznych i Społecznych",
+    "address": {
+      "buildingNumber": "17",
+      "street": "Łukasiewicza",
+      "city": "Płock",
+      "postalCode": "09-400"
+    }
+  }
+]

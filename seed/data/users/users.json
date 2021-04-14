@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "607333604d8ecf03b1e6a02a",
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "$2b$12$f3HBDe9lWfuAit/TqwXhG.X212gDEHs/tPSr4luMLlzELER6ceHM6",
+    "roles": [
+      "admin"
+    ]
+  }
+]
+
