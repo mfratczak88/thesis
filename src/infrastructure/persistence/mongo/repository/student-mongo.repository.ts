@@ -2,7 +2,7 @@ import StudentRepository from '../../../../domain/core/student/ports/student.rep
 import { ID } from '../../../../domain/core/id';
 import { Student } from '../../../../domain/core/student/student';
 import { Injectable } from '@nestjs/common';
-import { Db } from 'mongodb';
+import {  Db, MongoClient } from 'mongodb';
 import { BaseMongoRepository } from './base-mongo.repository';
 import { TelephoneNumber } from '../../../../domain/core/telephone-number';
 import { Name } from '../../../../domain/core/name';
@@ -11,7 +11,7 @@ import { Email } from '../../../../domain/core/email';
 @Injectable()
 export class StudentMongoRepository extends BaseMongoRepository<Student> implements StudentRepository {
 
-  constructor(db: Db) {
+constructor(db: Db) {
     super('students', db);
   }
 
@@ -25,7 +25,7 @@ export class StudentMongoRepository extends BaseMongoRepository<Student> impleme
   }
 
   async findByEmail(email: Email): Promise<Student|undefined> {
-    return await this.collection.find({ email: email });
+    return await this.collection.findOne({ email: email });
   }
 
   async findById(studentID: ID): Promise<Student> {

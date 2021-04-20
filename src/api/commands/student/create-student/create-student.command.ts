@@ -1,5 +1,12 @@
-import { ArrayNotEmpty, IsEmail, IsMobilePhone, IsNotEmpty } from 'class-validator';
-import { StudiedCourse } from '../../../../domain/core/student/studied-course';
+import {
+  ArrayNotEmpty,
+  IsEmail,
+  IsMobilePhone,
+  IsNotEmpty,
+  ValidateNested,
+} from 'class-validator';
+import { Type } from 'class-transformer';
+
 
 export class CreateStudentCommand {
 
@@ -15,7 +22,17 @@ export class CreateStudentCommand {
   @IsMobilePhone('pl-PL')
   readonly phoneNumber: string;
 
+  @ValidateNested({ each: true })
   @ArrayNotEmpty()
-  readonly studiedCourses: StudiedCourse[]
+  @Type(() => StudiedCourse)
+  readonly studiedCourses: StudiedCourse[];
+}
 
+class StudiedCourse {
+  @IsNotEmpty()
+  courseId: string;
+  @IsNotEmpty()
+  yearOfStart: number;
+  @IsNotEmpty()
+  semesterOfStart: string;
 }

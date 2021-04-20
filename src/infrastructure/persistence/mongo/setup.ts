@@ -7,7 +7,9 @@ import { IdMongoGenerator } from './id-generator-mongo.provider';
 
 import { ConfigService } from '@nestjs/config';
 import { MongoClient } from 'mongodb';
+import { MongoUnitOfWork } from './unit-of-work/mongo-unit-of-work';
 
+let client;
 let db;
 
 const queryHandlers = [
@@ -38,12 +40,20 @@ const IdGenerator = {
   useClass: IdMongoGenerator,
 };
 
-const loadDb = async (configService: ConfigService) => {
-  if (!db) {
-    const client = await MongoClient.connect(
+const loadClient = async (configService: ConfigService) => {
+  if (!client) {
+    client = await MongoClient.connect(
       configService.get('MONGO_CONNECTION_URL'),
       { useUnifiedTopology: true },
     );
+  }
+  return client;
+};
+const loadDb = async (configService: ConfigService) => {
+  if (!db) {
+    if(!client){
+      await loadClient(configService)
+    }
     db = client.db(configService.get('MONGO_DB'));
   }
   return db;
@@ -52,7 +62,9 @@ const createRepositoryProviders = (...repos) => {
   return repos.map(repo => {
     return {
       provide: repo.name,
-      useFactory: async (configService: ConfigService) => await new repo.ctor(await loadDb(configService)),
+      useFactory: async (configService: ConfigService) => await new repo.ctor(
+        await loadDb(configService)
+      ),
       inject: [ConfigService],
     };
   });
@@ -67,8 +79,14 @@ const createQueryProviders = (...queries) => {
     };
   });
 };
-
+const createUnitOfWork = () => {
+  return {
+    provide: 'UnitOfWork',
+    useFactory: async (configService) => await new MongoUnitOfWork(await loadClient(configService)),
+    inject: [ConfigService],
+  };
+};
 export const Repositories = createRepositoryProviders(...repositories);
 export const QueryHandlers = createQueryProviders(...queryHandlers);
-export const OtherProviders = [IdGenerator];
+export const OtherProviders = [IdGenerator, createUnitOfWork()];
 

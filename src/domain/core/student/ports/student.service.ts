@@ -45,13 +45,13 @@ export class StudentService {
   async validateCoursesExistence(studiedCourses: StudiedCourse[]) {
     const existingCoursesIds = (
       await this.courseRepo.findAllByIds(
-        studiedCourses.map(course => course.id)
+        studiedCourses.map(course => course.courseId)
       )
-    ).map(course => course.id);
+    ).map(course => course.id.toString());
 
-    const difference = studiedCourses.filter(course => !existingCoursesIds.includes(course.id));
-    if (difference) {
-      throw new Error(`Courses with ids: ${difference.map(course => course.id.toString()).join(',')} does not exist`);
+    const difference = studiedCourses.map(course=>course.courseId.toString()).filter(id => !existingCoursesIds.includes(id));
+    if (difference.length) {
+      throw new Error(`Courses with ids: ${difference.join(',')} does not exist`);
     }
   }
 

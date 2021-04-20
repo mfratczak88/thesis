@@ -5,7 +5,7 @@ import { Semester } from '../semester';
 export interface CourseRepository {
   findById(id: ID): Promise<Course | undefined>
 
-  findAllByIds(id: ID[]): Promise<Course[]>
+  findAllByIds(ids: ID[]): Promise<Course[]>
 
   findAllPossibleSemesters(): Promise<Semester | undefined>
 }

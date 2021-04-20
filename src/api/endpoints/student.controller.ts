@@ -20,7 +20,10 @@ export default class StudentController {
   @Post()
   @UseGuards(JwtAuthGuard)
   @Roles(Role.Admin, Role.OfficeClerk)
-  async createNewStudent(@Body() command: CreateStudentCommand) {
+  async createNewStudent(
+    @Body()
+      command: CreateStudentCommand
+  ) {
     const id = await this.commandBus.execute(command);
     return { id: id.toString() };
   }

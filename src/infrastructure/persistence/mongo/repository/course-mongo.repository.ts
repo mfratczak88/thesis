@@ -12,19 +12,47 @@ export class CourseMongoRepository extends BaseMongoRepository<Course> implement
   }
 
   protected fromMongo(mongoDoc): Course | undefined {
-    return undefined;
+    if (mongoDoc) {
+      const { _id, name, level, mode, facultyId } = mongoDoc;
+      return {
+        id: new ID(_id),
+        name,
+        level,
+        mode,
+        facultyId: new ID(facultyId),
+      };
+    }
   }
 
-  findAllByIds(id: ID[]): Promise<Course[]> {
-    return Promise.resolve([]);
+  protected toMongo(course: Course): any {
+    const { id, name, facultyId, level, mode } = course;
+    return {
+      _id: id.toString(),
+      name,
+      level,
+      mode,
+      facultyId: facultyId.toString(),
+    };
+  }
+
+  async findAllByIds(ids: ID[]): Promise<Course[]> {
+    const courses = await this.collection.find({
+      _id: {
+        $in: [...(ids.map(id => id.toString()))],
+      },
+    }).toArray();
+    return courses.map(course => this.fromMongo(course));
   }
 
   findAllPossibleSemesters(): Promise<Semester | undefined> {
     return Promise.resolve(undefined);
   }
 
-  findById(id: ID): Promise<Course | undefined> {
-    return Promise.resolve(undefined);
+  async findById(id: ID): Promise<Course | undefined> {
+    return this.fromMongo(
+      await this.collection.find({
+        _id: id.toString()
+      })
+    );
   }
-
 }
